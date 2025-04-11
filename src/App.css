@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'New Rocker', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Fixed the issue of the image being shifted to the right */
+.header {
+  width: 100%; /* Changed from 100vw to 100% to avoid scrollbar issues */
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: -5%;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  background-color: black;
+}
+
+.header h1 {
+  position: absolute;
+  color: white;
+  font-size: 6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Para mejor visibilidad */
+  z-index: 1; /* Asegura que el h1 esté sobre la imagen */
+}
+
+.header-image {
+  width: 100%; /* Changed from 100vw to 100% to match the container */
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Main content styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Table styles */
+.players-table {
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.players-table th, .players-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.players-table th {
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+.players-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: fixed;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 300px;
+  transform: translateY(-50%);
+}
+
+.tooltip h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.tooltip table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tooltip th, .tooltip td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.tooltip th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Add colors for percentage values */
+.tooltip td.victory {
+  color: green;
+}
+
+.tooltip td.draw {
+  color: yellow;
+}
+
+.tooltip td.defeat {
+  color: red;
+}
+
+/* Adjust tooltip position dynamically */
+.tooltip[data-position="top"] {
+  transform: translateY(-100%);
+}
+
+.tooltip[data-position="bottom"] {
+  transform: translateY(0);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .players-table {
+    font-size: 12px;
+  }
+
+  .tooltip {
+    font-size: 12px;
+  }
+}

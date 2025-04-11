@@ -53,8 +53,8 @@ const App = () => {
     <div className="App">
       <header className="header">
         <img
-          src="/maffia.jpeg"
-          alt="Header"
+          src="maffia.jpeg"
+          alt="Foto de la maffia estilo anime"
           className="header-image"
         />
         <h1>La maffia </h1>

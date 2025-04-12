@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   base: '/la-maffia/', // Set the base path for GitHub Pages
   plugins: [react()],
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+  },
 });

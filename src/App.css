@@ -16,16 +16,16 @@ body {
   overflow-x: hidden;
 }
 
-/* Fixed the issue of the image being shifted to the right */
+/* Made the header container responsive */
 .header {
-  width: 100%; /* Changed from 100vw to 100% to avoid scrollbar issues */
-  height: 60vh;
+  width: 100%;
+  max-width: 1280px; /* Added a max-width for better responsiveness */
+  height: auto; /* Adjust height to auto for responsiveness */
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  margin-top: -5%;
+  margin: 0 auto; /* Center the container */
   position: relative;
   z-index: 1;
   padding: 0;
@@ -40,9 +40,17 @@ body {
   z-index: 1; /* Asegura que el h1 esté sobre la imagen */
 }
 
+/* Added responsive styles for images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Adjusted header image for better responsiveness */
 .header-image {
-  width: 100%; /* Changed from 100vw to 100% to match the container */
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
 }

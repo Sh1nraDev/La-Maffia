@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
 
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
+  overflow: hidden;
   text-align: center;
 }
 
@@ -65,8 +66,10 @@ img {
 
 /* Table styles */
 .players-table {
-  width: 90%;
+  width: 100%;
   max-width: 800px;
+  margin: 0 auto;
+  overflow-x: auto;
   border-collapse: collapse;
   margin: 20px 0;
   background-color: #1e1e1e;

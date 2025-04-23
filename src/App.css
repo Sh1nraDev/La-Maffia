@@ -82,6 +82,7 @@ img {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
+  padding: 20px;
   border-collapse: collapse;
   background-color: #1e1e1e;
   border-radius: 10px;

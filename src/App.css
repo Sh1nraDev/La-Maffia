@@ -80,16 +80,15 @@ img {
 /* Table styles */
 .players-table {
   width: 100%;
-  max-width: 880px;
+  max-width: 792px;
   margin: 0 auto;
-  padding: 20px;
   border-collapse: collapse;
   background-color: #1e1e1e;
   border-radius: 10px;
 }
 
 .players-table th, .players-table td {
-  padding: 12px;
+  padding: 8px;
   text-align: center;
   border: 1px solid #333;
 }
@@ -114,7 +113,7 @@ img {
   background-color: #1e1e1e;
   color: #fff;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   max-width: 300px;

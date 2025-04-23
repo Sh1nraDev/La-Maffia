@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
 #root {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  height: 100vh;
   overflow: hidden;
-  text-align: center;
 }
 
 /* General styles */
@@ -19,14 +26,13 @@ body {
 
 /* Made the header container responsive */
 .header {
-  width: 100%;
-  max-width: 1280px; /* Added a max-width for better responsiveness */
-  height: auto; /* Adjust height to auto for responsiveness */
+  width: 100vw;
+  height: 70vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Center the container */
+  margin: 0;
   position: relative;
   z-index: 1;
   padding: 0;
@@ -36,9 +42,9 @@ body {
 .header h1 {
   position: absolute;
   color: white;
-  font-size: 6rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Para mejor visibilidad */
-  z-index: 1; /* Asegura que el h1 esté sobre la imagen */
+  font-size: clamp(3rem, 8vw, 6rem);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 /* Added responsive styles for images */
@@ -50,10 +56,13 @@ img {
 
 /* Adjusted header image for better responsiveness */
 .header-image {
-  max-width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 70vh;
   object-fit: cover;
-  object-position: center;
+  object-position: center 33%;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 /* Main content styles */
@@ -61,24 +70,24 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
+  height: 30vh;
+  padding: 10px;
+  overflow: hidden;
 }
 
 /* Table styles */
 .players-table {
   width: 100%;
-  max-width: 800px;
+  max-width: 880px;
   margin: 0 auto;
-  overflow-x: auto;
   border-collapse: collapse;
-  margin: 20px 0;
   background-color: #1e1e1e;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .players-table th, .players-table td {
-  padding: 10px;
+  padding: 12px;
   text-align: center;
   border: 1px solid #333;
 }
@@ -86,7 +95,11 @@ img {
 .players-table th {
   background-color: #333;
   color: #fff;
-  font-size: 1.5rem; /* Adjust the size as needed */
+  font-size: 1.5rem;
+}
+
+.players-table td {
+  font-size: 1.3rem;
 }
 
 .players-table tr:nth-child(even) {
@@ -158,4 +171,11 @@ img {
   .tooltip {
     font-size: 12px;
   }
+}
+
+.App {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }

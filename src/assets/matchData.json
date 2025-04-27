@@ -1,32 +1,32 @@
 {
   "Javier": {
-    "Pedro": { "V": 0, "E": 0, "D": 1 },
-    "Nicolás": { "V": 0, "E": 0, "D": 1 },
-    "Federico": { "V": 0, "E": 0, "D": 1 },
-    "Juan Cruz": { "V": 0, "E": 0, "D": 1 }
+    "Pedro": { "V": 0, "E": 0, "D": 2 },
+    "Nicolás": { "V": 0, "E": 2, "D": 1 },
+    "Federico": { "V": 0, "E": 0, "D": 2 },
+    "Juan Cruz": { "V": 0, "E": 0, "D": 2 }
   },
   "Pedro": {
-    "Javier": { "V": 1, "E": 0, "D": 0 },
-    "Nicolás": { "V": 1, "E": 0, "D": 0 },
+    "Javier": { "V": 2, "E": 0, "D": 0 },
+    "Nicolás": { "V": 3, "E": 1, "D": 0 },
     "Federico": { "V": 1, "E": 0, "D": 0 },
-    "Juan Cruz": { "V": 0, "E": 0, "D": 1 }
+    "Juan Cruz": { "V": 0, "E": 1, "D": 1 }
   },
   "Nicolás": {
-    "Javier": { "V": 1, "E": 0, "D": 0 },
-    "Pedro": { "V": 0, "E": 0, "D": 1 },
-    "Federico": { "V": 1, "E": 0, "D": 0 },
-    "Juan Cruz": { "V": 0, "E": 0, "D": 1 }
+    "Javier": { "V": 1, "E": 2, "D": 0 },
+    "Pedro": { "V": 0, "E": 1, "D": 3 },
+    "Federico": { "V": 2, "E": 0, "D": 0 },
+    "Juan Cruz": { "V": 0, "E": 1, "D": 1 }
   },
   "Federico": {
-    "Javier": { "V": 1, "E": 0, "D": 0 },
+    "Javier": { "V": 2, "E": 0, "D": 0 },
     "Pedro": { "V": 0, "E": 0, "D": 1 },
-    "Nicolás": { "V": 0, "E": 0, "D": 1 },
-    "Juan Cruz": { "V": 1, "E": 0, "D": 0 }
+    "Nicolás": { "V": 0, "E": 0, "D": 2 },
+    "Juan Cruz": { "V": 2, "E": 0, "D": 0 }
   },
   "Juan Cruz": {
-    "Javier": { "V": 1, "E": 0, "D": 0 },
-    "Pedro": { "V": 0, "E": 0, "D": 0 },
-    "Nicolás": { "V": 1, "E": 0, "D": 0 },
-    "Federico": { "V": 0, "E": 0, "D": 1 }
+    "Javier": { "V": 2, "E": 0, "D": 0 },
+    "Pedro": { "V": 0, "E": 1, "D": 0 },
+    "Nicolás": { "V": 1, "E": 1, "D": 0 },
+    "Federico": { "V": 0, "E": 0, "D": 2 }
   }
 }

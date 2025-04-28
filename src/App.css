@@ -59,11 +59,29 @@ img {
 .header-image {
   width: 100vw;
   height: 70vh;
-  object-fit: cover;
-  object-position: center 33%;
+  object-fit: contain;
+  object-position: center center;
   margin: 0;
   padding: 0;
   display: block;
+  transform: scale(1.2);
+}
+
+/* Media query for mobile devices (approximately 7 inches) */
+@media screen and (max-width: 600px) {
+  .header {
+    height: 30vh;
+  }
+  
+  .header-image {
+    height: 30vh;
+    object-fit: contain;
+    transform: scale(1);
+  }
+  
+  .header h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
 }
 
 /* Main content styles */

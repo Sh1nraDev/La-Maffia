@@ -28,7 +28,8 @@ body {
 /* Made the header container responsive */
 .header {
   width: 100%;
-  height: 70vh;
+  height: auto;
+  max-height: 68vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -58,25 +59,28 @@ img {
 /* Adjusted header image for better responsiveness */
 .header-image {
   width: 100vw;
-  height: 70vh;
+  height: auto;
   object-fit: contain;
   object-position: center center;
   margin: 0;
   padding: 0;
   display: block;
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 /* Media query for mobile devices (approximately 7 inches) */
 @media screen and (max-width: 600px) {
   .header {
-    height: 30vh;
+    height: auto;
+    max-height: 30vh;
   }
   
   .header-image {
-    height: 30vh;
+    width: 100vw;
+    height: auto;
+    max-height: 30vh;
     object-fit: contain;
-    transform: scale(1);
+    transform: none;
   }
   
   .header h1 {
